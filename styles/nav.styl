@@ -1,0 +1,38 @@
+
+nav
+
+	padding 2em 1em
+
+	.container
+		display flex
+		flex-direction row
+		align-items center
+
+	.logo
+		width 200px
+		height 40px
+	
+	
+	a
+		font-weight normal
+
+		& ~ a
+			margin-left 1em
+
+
+	a:not(.cta):hover
+		box-shadow 0 2px 0 0 #0e95aa
+
+
+	.cta
+		//background #0e95aa
+		//background #4aaa0e
+		background #0eaa94
+		color #fff
+		border-radius 4px
+		padding 0.5em 1em
+		margin-left 2em
+		&:hover
+			background lighten(@background, 10%)
+
+

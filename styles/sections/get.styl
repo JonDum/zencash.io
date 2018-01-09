@@ -1,0 +1,48 @@
+
+
+section#get
+
+	background url('images/green-nodes.jpg')
+
+	h3
+		font-size 1.3em
+		font-weight normal
+		opacity 0.5
+		margin 0 auto
+		text-align center
+
+	h3, h2
+		color #fff
+		
+
+	.exchanges
+
+		a
+			display inline-flex
+			flex-direction column
+			align-items center
+			justify-content center
+			background #fff
+			width 200px
+			height @width
+			text-align center
+			box-shadow 0 3px 9px fade-out(#000, 0.7)
+
+			&:hover
+				transform translate(0, -5px)
+				box-shadow 0 6px 18px fade-out(#000, 0.7)
+
+			~ a
+				margin-left 3em
+	
+		.row
+			display table
+			margin 2em auto
+
+		img
+			width 5em
+			height 5em
+			display block
+			margin-bottom 2em
+
+

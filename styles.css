@@ -1,0 +1,340 @@
+.fit,
+#hero video,
+#hero canvas,
+#hero:after,
+section#technology:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+spacer {
+  flex: 1;
+}
+footer {
+  display: block;
+  padding: 3em 0;
+  background: #201f23;
+  color: #999;
+}
+footer .container {
+  display: flex;
+}
+footer img {
+  width: 200px;
+}
+#hero {
+  padding: 9em 0 1em 0;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+#hero > .container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+#hero video,
+#hero canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#hero canvas {
+  z-index: 3;
+}
+#hero:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-30deg, rgba(14,10,74,0.9), rgba(14,149,170,0.9));
+  z-index: 5;
+}
+#hero h1 {
+  margin: 0;
+  font-size: 4em;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+#hero h1 span {
+  font-weight: 400;
+}
+#hero p {
+  opacity: 0.7;
+  font-size: 1.2em;
+  max-width: 320px;
+  margin: auto;
+}
+#hero .cta {
+  border: 1px solid #fff;
+  border-radius: 99px;
+  padding: 0.5em 1em;
+  margin-top: 3em;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+#hero .cta span {
+  display: block;
+  transition: 0.3s ease;
+  transform: translate(0, 0);
+}
+#hero .cta > icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: 0.3s ease;
+  transform: translate(-50%, -250%);
+}
+#hero .cta:hover span {
+  transform: translate(0, 150%);
+}
+#hero .cta:hover icon {
+  transform: translate(-50%, -50%);
+}
+#hero .cta:hover {
+  background: rgba(255,255,255,0.05);
+}
+#hero .social {
+  margin-top: 9em;
+}
+#hero .social a ~ a {
+  margin-left: 2em;
+}
+@font-face {
+  font-family: 'icons';
+  src: url("fonts/icons.eot?4modug");
+  src: url("fonts/icons.eot?4modug#iefix") format('embedded-opentype'), url("fonts/icons.ttf?4modug") format('truetype'), url("fonts/icons.woff?4modug") format('woff'), url("fonts/icons.svg?4modug#icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+icon {
+  display: inline-block;
+  font-family: 'icons' !important;
+  vertical-align: middle;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+icon.discord:before {
+  content: "\e900";
+}
+icon.arrow-down:before {
+  content: "\ea3e";
+}
+icon.circle-down:before {
+  content: "\ea43";
+}
+icon.facebook:before {
+  content: "\ea91";
+}
+icon.twitter:before {
+  content: "\ea96";
+}
+icon.youtube:before {
+  content: "\ea9d";
+}
+icon.github:before {
+  content: "\eab0";
+}
+icon.reddit:before {
+  content: "\eac6";
+}
+nav {
+  padding: 2em 1em;
+}
+nav .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .logo {
+  width: 200px;
+  height: 40px;
+}
+nav a {
+  font-weight: normal;
+}
+nav a ~ a {
+  margin-left: 1em;
+}
+nav a:not(.cta):hover {
+  box-shadow: 0 2px 0 0 #0e95aa;
+}
+nav .cta {
+  background: #0eaa94;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin-left: 2em;
+}
+nav .cta:hover {
+  background: #10c8ae;
+}
+html,
+body {
+  margin: 0;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1024px;
+  padding: 0 1%;
+  margin: 0 auto;
+}
+section {
+  padding: 3em 0 6em 0;
+}
+section.thin {
+  padding: 1em 0;
+}
+section .container {
+  width: 80%;
+}
+section h2 {
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2em 0 6em 0;
+}
+section h2:before,
+section h2:after {
+  content: '';
+  width: 5em;
+  height: 1px;
+  background: currentcolor;
+  opacity: 0.5;
+  vertical-align: middle;
+  margin: 0 1em;
+  display: inline-block;
+}
+section h3 {
+  font-size: 1.3em;
+}
+section p {
+  font-size: 1em;
+}
+section.announcement {
+  text-align: center;
+  background: #201f23;
+  color: #c6c6c6;
+}
+section.announcement span {
+  margin-right: 1em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+section.announcement a {
+  color: #fff;
+  padding: 0;
+}
+section.announcement a:hover {
+  box-shadow: 0 1px 0 0 #fff;
+}
+section#features .container > div {
+  width: 50%;
+  margin-top: 6em;
+  position: relative;
+}
+section#features .container > div img {
+  position: absolute;
+  left: 150%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+section#features .container > div:nth-child(even) {
+  margin-left: auto;
+}
+section#features .container > div:nth-child(even) img {
+  left: 0;
+  transform: translate(-150%, -50%);
+}
+section#get {
+  background: url("images/green-nodes.jpg");
+}
+section#get h3 {
+  font-size: 1.3em;
+  font-weight: normal;
+  opacity: 0.5;
+  margin: 0 auto;
+  text-align: center;
+}
+section#get h3,
+section#get h2 {
+  color: #fff;
+}
+section#get .exchanges a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 3px 9px rgba(0,0,0,0.3);
+}
+section#get .exchanges a:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+section#get .exchanges a ~ a {
+  margin-left: 3em;
+}
+section#get .exchanges .row {
+  display: table;
+  margin: 2em auto;
+}
+section#get .exchanges img {
+  width: 5em;
+  height: 5em;
+  display: block;
+  margin-bottom: 2em;
+}
+section#technology:before {
+  content: '';
+  background: url("images/world-connections.png");
+  background-size: cover;
+  z-index: 4;
+}
+html {
+  color: #555;
+  font-size: 16px;
+}
+body,
+a {
+  font-family: 'Mukta Malar', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+}
+a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: inherit;
+}
+a:visited {
+  color: normal;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 200;
+}
+p {
+  font-size: 1rem;
+}
