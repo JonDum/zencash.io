@@ -2,9 +2,24 @@
 
 section#technology
 
+	background #000
+	color #ccc
+
 	&:before
 		@extend .fit
 		content ''
-		background url('images/world-connections.png')
-		background-size cover
+		background url('images/world-connections.png') no-repeat
+		background-size contain
+		filter invert(100%)
+		opacity 0.35
 		z-index 4
+
+	> p
+		text-align center
+		max-width 33%
+		margin -3em auto 0 auto
+		span
+			font-weight bold
+
+	ul span
+		color #fff

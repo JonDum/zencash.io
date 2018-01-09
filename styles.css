@@ -193,7 +193,12 @@ body {
   padding: 0 1%;
   margin: 0 auto;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 section {
+  position: relative;
   padding: 3em 0 6em 0;
 }
 section.thin {
@@ -227,6 +232,24 @@ section h3 {
 section p {
   font-size: 1em;
 }
+section.leftright .container > div {
+  width: 50%;
+  margin-top: 6em;
+  position: relative;
+}
+section.leftright .container > div img {
+  position: absolute;
+  left: 150%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+section.leftright .container > div:nth-child(even) {
+  margin-left: auto;
+}
+section.leftright .container > div:nth-child(even) img {
+  left: 0;
+  transform: translate(-150%, -50%);
+}
 section.announcement {
   text-align: center;
   background: #201f23;
@@ -244,24 +267,6 @@ section.announcement a {
 }
 section.announcement a:hover {
   box-shadow: 0 1px 0 0 #fff;
-}
-section#features .container > div {
-  width: 50%;
-  margin-top: 6em;
-  position: relative;
-}
-section#features .container > div img {
-  position: absolute;
-  left: 150%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-section#features .container > div:nth-child(even) {
-  margin-left: auto;
-}
-section#features .container > div:nth-child(even) img {
-  left: 0;
-  transform: translate(-150%, -50%);
 }
 section#get {
   background: url("images/green-nodes.jpg");
@@ -312,11 +317,28 @@ section#get .wallets {
 section#get .wallets img {
   max-width: 200px;
 }
+section#technology {
+  background: #000;
+  color: #ccc;
+}
 section#technology:before {
   content: '';
-  background: url("images/world-connections.png");
-  background-size: cover;
+  background: url("images/world-connections.png") no-repeat;
+  background-size: contain;
+  filter: invert(100%);
+  opacity: 0.35;
   z-index: 4;
+}
+section#technology > p {
+  text-align: center;
+  max-width: 33%;
+  margin: -3em auto 0 auto;
+}
+section#technology > p span {
+  font-weight: bold;
+}
+section#technology ul span {
+  color: #fff;
 }
 html {
   color: #555;

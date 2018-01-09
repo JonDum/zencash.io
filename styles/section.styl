@@ -2,6 +2,7 @@
 
 section
 
+	position relative
 	padding 3em 0 6em 0
 
 	&.thin
@@ -27,11 +28,35 @@ section
 			margin 0 1em
 			display inline-block
 
+
 		
 	h3
 		font-size 1.3em
 
 	p
 		font-size 1em
+
+
+
+section.leftright
+	.container
+
+		> div
+			width 50%
+			margin-top 6em
+			position relative
+
+			img
+				position absolute
+				left 150%
+				top 50%
+				transform translate(-50%,-50%)
+
+			&:nth-child(even)
+				margin-left auto
+
+				img
+					left 0
+					transform translate(-150%,-50%)
 
 	
