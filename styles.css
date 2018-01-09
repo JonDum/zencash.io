@@ -265,6 +265,7 @@ section#features .container > div:nth-child(even) img {
 }
 section#get {
   background: url("images/green-nodes.jpg");
+  background-size: cover;
 }
 section#get h3 {
   font-size: 1.3em;
@@ -304,6 +305,12 @@ section#get .exchanges img {
   height: 5em;
   display: block;
   margin-bottom: 2em;
+}
+section#get .wallets {
+  color: #fff;
+}
+section#get .wallets img {
+  max-width: 50%;
 }
 section#technology:before {
   content: '';
