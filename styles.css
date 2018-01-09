@@ -310,7 +310,7 @@ section#get .wallets {
   color: #fff;
 }
 section#get .wallets img {
-  max-width: 50%;
+  max-width: 200px;
 }
 section#technology:before {
   content: '';
