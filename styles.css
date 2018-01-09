@@ -234,12 +234,12 @@ section p {
 }
 section.leftright .container > div {
   width: 50%;
-  margin-top: 6em;
+  margin-top: 9em;
   position: relative;
 }
 section.leftright .container > div img {
   position: absolute;
-  left: 150%;
+  left: 125%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
